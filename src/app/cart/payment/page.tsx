@@ -2,7 +2,6 @@
 import { Button } from "_/components/ui/button";
 import { Input } from "_/components/ui/input";
 import { Label } from "_/components/ui/label";
-import { FaRegCreditCard } from "react-icons/fa6";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -12,7 +11,6 @@ import { getUerCart } from "_/app/_Services/cart.service";
 import { date } from "zod";
 import { checkoutSession, CreatCashOrder } from "./payment.actions";
 import { CartItemType } from "../cart.type";
-import Link from "next/link";
 import { CartContext } from "_/app/_Contexts/CartContext/CartContextProvider";
 import { toast } from "sonner";
 

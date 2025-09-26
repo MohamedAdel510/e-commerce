@@ -44,7 +44,7 @@ export async function checkoutSession(id : string , shippingAddress : shippingAd
 
     if(userToken){
        try{
-            const res =  await fetch(`https://ecommerce.routemisr.com/api/v1/orders/${id}`, {
+            const res =  await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}?url=${process.env.MY_DOMAIN}`, {
                 method: 'post',
                 headers: {
                     token: userToken as string,
